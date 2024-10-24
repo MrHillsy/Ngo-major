@@ -1,0 +1,456 @@
+body {
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  position: sticky;
+}
+
+.logo {
+  width: 50px; /* Set the width for the logo */
+  height: 50px; /* Set the height to make it a square */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover;
+  vertical-align: middle; /* Aligns the logo with the text vertically */
+  margin-right: 10px; /* Adds space between logo and text */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Expands the logo on hover */
+  animation: vibrate 0.3s linear infinite; /* Adds vibration animation */
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
+}
+
+.logo-text {
+  display: inline-block; /* Keeps the text beside the logo */
+  font-family: "Poppins", sans-serif; /* Apply Poppins font */
+  font-size: 20px; /* Adjust text size */
+  vertical-align: middle; /* Aligns the text with the logo vertically */
+  cursor: pointer;
+}
+
+/* Custom Navbar background and link colors */
+nav.navbar {
+  background-color: indianred !important; /* Set the background color */
+  border-bottom: 2px solid darkred; /* Optional border for a modern look */
+}
+
+nav.navbar a.nav-link {
+  color: white !important; /* Set the link color */
+}
+
+nav.navbar a.nav-link:hover {
+  color: skyblue !important; /* Set the link hover color */
+}
+
+/* Custom styles for the Navbar brand (logo text) */
+nav.navbar .navbar-brand {
+  color: white !important; /* Navbar brand (logo text) color */
+}
+
+nav.navbar .navbar-brand:hover {
+  color: lightgray !important; /* Color change on hover */
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative; /* Needed for dropdown positioning */
+}
+
+nav ul li a {
+  color: white;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav ul li a:hover {
+  color: skyblue;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: skyblue;
+  transition: 0.3s;
+  bottom: 0;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+/* Dropdown Menu Styling */
+nav ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Positions dropdown below the parent */
+  left: 0;
+  /* Matches the navigation bar */
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 10;
+}
+
+nav ul li .dropdown-menu li {
+  display: block;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+nav ul li .dropdown-menu li a {
+  color: white;
+}
+
+nav ul li .dropdown-menu li a:hover {
+  color: skyblue;
+}
+
+/* Show dropdown menu on hover */
+nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #d4af37 !important; /* Change to your theme color */
+  border-color: #d4af37 !important;
+  color: #333 !important; /* Match border color */
+}
+
+.btn-primary:hover {
+  background-color: white !important; /* Darker shade on hover */
+  border-color: #d4af37 solid !important;
+}
+
+/* Hero text container */
+.text-container {
+  background: linear-gradient(135deg, skyblue, #ffcccb);
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+ 
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual text styles */
+
+       
+      .hero-text {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: fadeInOut 12s ease-in-out infinite; /* Loop animation */
+      }
+
+      /* Smooth text animation */
+      @keyframes fadeInOut {
+        0%, 20%, 100% {
+          opacity: 0;
+        }
+        30%, 70% {
+          opacity: 1;
+        }
+      }
+/* About Us Section */
+.about-us {
+  padding: 50px;
+  background-color: #f5f5dc;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  color: indianred;
+}
+
+.about-section .contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 0 auto;
+  transition: transform 0.2s ease-in-out; /* Center the image */
+}
+.about-img:hover {
+  transform: scale(1.2);
+}
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* Set grey background for adoptable-pet section */
+.adoptable-pet {
+  background-color: #f0f0f0; /* light grey */
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Main title styling */
+.main-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(
+    to right,
+    blue,
+    #ff6b6b,
+    #6bcb77
+  ); /* Example gradient colors */
+  -webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent; /* Makes the inside of the text transparent to show the gradient */
+}
+
+/* Animal title styling */
+.animal-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: indianred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animal-title img.logo {
+  width: 40px; /* Adjust the size of the logo next to the title */
+  height: 40px;
+  margin-left: 10px;
+}
+
+/* Circle card styling */
+.circle-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Styling the images to be round with shadow */
+.circle-card img {
+  width: 120px; /* Adjust the size of the circle images */
+  height: 120px;
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  object-fit: cover; /* Ensures the image fits inside the circle */
+  transition: transform 0.3s ease-in-out;
+}
+
+.circle-card img:hover {
+  transform: scale(1.1); /* Expands the image slightly on hover */
+}
+
+/* Sub-title styling */
+.sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #333;
+}
+
+/* Read More Section */
+.read-more-content {
+  display: none; /* Hidden by default */
+}
+
+.read-more-btn {
+  background-color: indianred;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 50px;
+  display: block;
+  margin: 10px auto;
+}
+
+.read-more-btn:hover {
+  background-color: darkred;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 24px;
+  }
+
+  .animal-title {
+    font-size: 18px;
+  }
+
+  .pet-info {
+    padding: 10px;
+  }
+
+  .read-more-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+.btn {
+  /* Your button styles */
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: skyblue;
+  border: none;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
+/* contact form */
+/* Center the form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fdf5f5; /* Light, warm background */
+  padding: 40px;
+  background-image: url("paw-print-bg.png"); /* Example of subtle background */
+  background-size: cover;
+}
+
+/* Styling the form itself */
+form {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  background: whitesmoke;
+  border-radius: 25px; /* More rounded for a friendlier look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text */
+}
+
+/* Form Heading */
+form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: indianred; /* Match with your color theme */
+}
+
+form p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Styling the form elements */
+form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px; /* Softer, rounded edges */
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f9f9f9; /* Softer background inside input */
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: indianred; /* Highlight inputs on focus */
+  outline: none;
+}
+
+/* Textarea customization */
+form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Styling the submit button */
+form button {
+  width: 100%;
+  padding: 15px;
+  background-color: indianred; /* Primary action color */
+  border: none;
+  border-radius: 25px; /* Make the button very rounded */
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #b74141; /* Darker shade on hover */
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  justify-content: space-evenly;
+  padding: 20px 100%;
+  margin-top: 30px;
+}
+
+.footer-content a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+

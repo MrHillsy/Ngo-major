@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Involved</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+
+      h1,
+      h2 {
+        color: indianred;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        background: linear-gradient(
+          45deg,
+          #ff6b6b,
+          #f09433
+        ); /* Gradient background */
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+      }
+
+      .hero-section h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+
+      /* Unified Styles for "Get Involved" Sections */
+      .section {
+        background: #fff;
+        padding: 60px 20px;
+        text-align: center;
+        margin: 20px auto;
+        border-radius: 8px;
+        max-width: 900px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+        transition: transform 0.3s ease; /* Add a hover effect */
+      }
+
+      .section:hover {
+        transform: scale(1.02); /* Slight scale effect on hover */
+      }
+
+      .section h2 {
+        font-size: 2.5rem;
+        color: indianred;
+        margin-bottom: 20px;
+      }
+
+      .section p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+        color: #555;
+      }
+
+      /* Button Styles */
+      .btn-primary {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 1.1rem;
+        background: linear-gradient(
+          45deg,
+          #ff6b6b,
+          #f09433
+        ); /* Modern gradient */
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow */
+      }
+
+      .btn-primary:hover {
+        background: linear-gradient(
+          45deg,
+          #f09433,
+          #ff6b6b
+        ); /* Reverse gradient on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+      }
+
+      /* Contact Section */
+      .contact-section {
+        background-color: #ffe3e3; /* Soft pink background */
+        padding: 60px 20px;
+        text-align: center;
+        margin: 20px auto;
+        border-radius: 8px;
+        max-width: 800px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Donation Method */
+      .donation-method {
+        margin-top: 30px;
+      }
+
+      .donation-method h3 {
+        font-size: 1.8rem;
+        color: indianred;
+        margin-bottom: 15px;
+      }
+
+      .donation-method p {
+        font-size: 1.1rem;
+        color: #555;
+      }
+
+      /* QR Codes for Crypto */
+      .qr-code {
+        margin-top: 10px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      /* Donation Impact */
+      .donation-impact {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #ffe3e3;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .donation-impact h2 {
+        font-size: 2.5rem;
+        color: indianred;
+        margin-bottom: 30px;
+      }
+
+      .impact-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .impact-item {
+        width: 30%;
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .impact-item img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+      }
+
+      .impact-item p {
+        font-size: 1.2rem;
+        color: #555;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        margin-top: 40px;
+      }
+    </style>
+    <style>
+   .notification-banner {
+    background-color: #e74c3c; /* Red color for alert */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Positioning context for absolute elements */
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="notification-banner">
+        <p>🚨 All contributions are dedicated to aiding lost pets and ensuring the well-being of those we currently care for.</p>
+    </div>
+    
+    <!-- Hero Section -->
+    <header class="hero-section" id="get involved">
+      <h1>Get Involved with Furever Safe</h1>
+      <p>Together, we can make a difference in the lives of pets in need.</p>
+    </header>
+
+    <!-- Donation Section -->
+    <section class="section" id="donate">
+      <h2>Donate</h2>
+      <p>
+        Your contributions directly support rescue efforts, medical care, and
+        fostering programs. Choose your preferred method of donation below:
+      </p>
+
+      <!-- PayPal Donation -->
+      <div class="donation-method">
+        <h3>Donate via PayPal</h3>
+        <a href="https://www.paypal.com/donate-link" class="btn-primary"
+          >Donate with PayPal</a
+        >
+      </div>
+
+      <!-- Crypto Donation -->
+      <div class="donation-method">
+        <h3>Donate with Cryptocurrency</h3>
+        <p>Send your crypto donation to the address below:</p>
+        <div class="crypto-donation">
+          <p>
+            <strong>Bitcoin (BTC):</strong> 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
+          </p>
+          <p>
+            <strong>Ethereum (ETH):</strong>
+            0x32Be343B94f860124dC4fEe278FDCBD38C102D88
+          </p>
+          <img
+            src="qr-code-bitcoin.png"
+            alt="Bitcoin QR Code"
+            class="qr-code"
+          />
+          <img
+            src="qr-code-ethereum.png"
+            alt="Ethereum QR Code"
+            class="qr-code"
+          />
+        </div>
+      </div>
+
+      <!-- Direct Bank Transfer -->
+      <div class="donation-method">
+        <h3>Direct Bank Transfer</h3>
+        <p>
+          You can also donate by sending funds directly to our bank account.
+        </p>
+        <p><strong>Account Name:</strong> Furever Safe</p>
+        <p><strong>Account Number:</strong> 123456789</p>
+        <p><strong>Bank Name:</strong> National Bank</p>
+      </div>
+      
+    </section>
+
+    <!-- Donation Impact Section -->
+    <section class="donation-impact">
+      <h2>How Your Donation Helps</h2>
+      <div class="impact-grid">
+        <div class="impact-item">
+          <img src="pet food icon.png" alt="Pet Food Icon" />
+          <p>
+            <strong>$50</strong> provides food for a rescued pet for a week.
+          </p>
+        </div>
+        <div class="impact-item">
+          <img src="medical care icon.png" alt="Medical Care Icon" />
+          <p><strong>$100</strong> covers medical care for a pet in need.</p>
+        </div>
+        <div class="impact-item">
+          <img src="shelter icon.png" alt="Shelter Icon" />
+          <p>
+            <strong>$200</strong> provides shelter for a foster pet for one
+            month.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section class="section" id="volunteer">
+      <h2>Volunteer</h2>
+      <p>
+        Whether it's at events, transporting pets, or providing shelter, your
+        time can help us save lives.
+      </p>
+      <a href="#" class="btn-primary">Sign Up to Volunteer</a>
+    </section>
+
+    <!-- Foster Section -->
+    <section class="section" id="foster">
+      <h2>Become a Foster Parent</h2>
+      <p>
+        Provide temporary homes to pets in need of love and care before they
+        find their forever homes.
+      </p>
+      <a href="#" class="btn-primary">Become a Foster Parent</a>
+    </section>
+
+    <!-- Spread the Word Section -->
+    <section class="section">
+      <h2>Spread the Word</h2>
+      <p>
+        Share our mission on social media, or host a fundraising event to raise
+        awareness in your community.
+      </p>
+      <a href="#" class="btn-primary">Share on Social Media</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>
+        If you have questions or would like more information, feel free to reach
+        out!
+      </p>
+      <a href="contact.html" class="btn-primary">Contact Us</a>
+    </section>
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+    </script>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Furever Safe. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
